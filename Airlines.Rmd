@@ -1,0 +1,50 @@
+---
+title: "Airlines"
+author: "Shreeyash Kavhale"
+date: "2025-04-14"
+output: html_document
+---
+
+```{r}
+AirPassengers
+```
+```{r}
+plot(AirPassengers)
+```
+```{r}
+plot(diff(AirPassengers))
+```
+```{r}
+plot(decompose(AirPassengers))
+```
+```{r}
+x<-1:50
+plot(x)
+acf(x)
+pacf(x)
+y<-sin(x*pi/3)
+
+```
+```{r}
+acf(y)
+
+```Auto co Relation function 
+```{r}
+age<-read.table("C:/Users/SHREEYASH/Downloads/age (1).dat", header = TRUE, sep = "\t")
+age
+```
+```
+```{r}
+agets <- ts(age)
+agets
+```
+```{r}
+agetssma3 <-SMA(agets,n=3)
+plot.ts(agetssma3)
+agetssma5 <- SMA(agets, n=5)
+plot.ts (agetssma5)
+
+```
+```
+
+
