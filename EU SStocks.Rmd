@@ -1,0 +1,54 @@
+---
+title: "EU STocks"
+author: "Shreeyash Kavhale"
+date: "2025-04-14"
+output: html_document
+---
+
+```{r}
+```
+
+```{r}
+
+```
+
+```{head(EuStockMarkets)}
+
+
+```
+
+```{r}
+class(EuStockMarkets)
+```
+
+\
+
+```{r}
+window(EuStockMarkets, start=1991, end=1998)
+```
+
+```{r}
+hist(EuStockMarkets[,"SMI"],30)
+```
+
+```{r}
+plot(EuStockMarkets)
+```
+
+```{r}
+hist(EuStockMarkets[,"SMI"])
+hist(diff(EuStockMarkets[, "SMI"],30))
+```
+
+```{r}
+hist(EuStockMarkets[,"SMI"])
+hist(diff(EuStockMarkets[, "SMI"],30))
+```
+
+```{r}
+plot(lag(diff(EuStockMarkets[,"SMI"]),1),diff(EuStockMarkets[,"DAX"]))
+```
+
+```{r}
+
+```
